@@ -1,0 +1,16 @@
+nav a {
+text-decoration: none;
+color: whitesmoke;
+font-size: 35px;
+padding-right: 2%;
+}
+
+html {
+background-image: linear-gradient(purple, white);
+ background-repeat: no-repeat;
+ height: 100vh;
+}
+
+section {
+
+}
