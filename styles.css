@@ -1,16 +1,57 @@
-nav a {
-text-decoration: none;
-color: whitesmoke;
-font-size: 35px;
-padding-right: 2%;
-}
+ nav a {
+     text-decoration: none;
+     color: whitesmoke;
+     font-size: 35px;
+     padding-right: 2%;
+ }
 
-html {
-background-image: linear-gradient(purple, white);
- background-repeat: no-repeat;
- height: 100vh;
-}
+ html {
+     background-image: linear-gradient(purple, white);
+     background-repeat: no-repeat;
+     height: 100vh;
+ }
 
 section {
+background-color: rgba(0,0,0,0.4);
 
+ }
+
+ .logo {
+     grid-column: 4/5;
+    justify-self: center;
+     
+ }
+
+.links {
+    grid-column: 1/4;
+}
+
+.logo img {
+    width: 30%;
+    display: grid;
+    
+}
+
+ .images {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     width: 70%;
+     margin: auto;
+ }
+
+ nav {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-gap: 20px;
+ }
+
+ .images img {
+     width: 90%;
+ padding-right: 10px;
+ }
+
+p {
+font-size: 20px;
+text-align: center;
+color: white;
 }
