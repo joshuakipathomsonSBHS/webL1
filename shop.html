@@ -4,6 +4,10 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+
+
+</script>
 
 <body>
     <nav>
@@ -14,31 +18,48 @@
             <a href="sizing.html">Sizing</a>
         </div>
         <a class="logo" href="index.html"><img src="Photoshop/Logo.png"></a>
+        <div id="cart"><a><img id="cartimg" src="Photoshop/Cart%202.png"></a></div>
+
     </nav>
 </body>
 <section class="shop">
+    <div id="overlaya" onclick="offa()">
+        <h2 id="yourcart">Your Cart</h2>
+        <h3 id="empty">Your cart is empty. Please add items and return to checkout.</h3>
+    </div>
     <h2>Welcome to the Shop, more designs will come out soon</h2>
     <ul class="clothing">
         <li>
-        <img src="Photoshop/whiteHoodie.png" alt= Hydra Blue>
+            <img src="Photoshop/whiteHoodie.png" alt=Hydra Blu>
             <h3>Cost: $35</h3>
-            <button>Buy now</button>
+            <button id="minbutton" onclick="minusa()">&minus;</button>
+            <input type="number" min="0" id="HyrdaBlu" step="0" value="0">
+            <button id="incbutton" onclick="plusa()">&plus;</button>
+            <button id="adda" onclick="adda()">Add to Cart</button>
         </li>
         <li>
-        <img src="Photoshop/teeBlack.png" alt= Hydra Black>
-           <h3>Cost: $30</h3>
-            <button>Buy now</button>
-        </li>
-        <li>
-        <img src="Photoshop/White%20T-shirt.png" alt= Hydra Green>
+            <img src="Photoshop/teeBlack.png" alt=Hydra Bla>
             <h3>Cost: $30</h3>
-            <button>Buy now</button>
+            <button id="minbutton" onclick="minusa()">&minus;</button>
+            <input type="number" min="0" id="HyrdaBla" step="0" value="0">
+            <button id="incbutton" onclick="plusa()">&plus;</button>
+            <button id="adda" onclick="adda()">Add to Cart</button>
         </li>
         <li>
-        <img src="Photoshop/BeanyWhite.png" alt= Hydra Red>
-              <h3>Cost: $25</h3>
-            <button>Buy now</button>
+            <img src="Photoshop/White%20T-shirt.png" alt=Hydra Gre>
+            <h3>Cost: $30</h3>
+            <button id="minbutton" onclick="minusa()">&minus;</button>
+            <input type="number" min="0" id="HyrdaGre" step="0" value="0">
+            <button id="incbutton" onclick="plusa()">&plus;</button>
+            <button id="adda" onclick="adda()">Add to Cart</button>
+        </li>
+        <li>
+            <img src="Photoshop/BeanyWhite.png" alt=Hydra Red>
+            <h3>Cost: $25</h3>
+            <button id="minbutton" onclick="minusa()">&minus;</button>
+            <input type="number" min="0" id="HyrdaRed" step="0" value="0">
+            <button id="incbutton" onclick="plusa()">&plus;</button>
+            <button id="adda" onclick="adda()">Add to Cart</button>
         </li>
     </ul>
 </section>
-
