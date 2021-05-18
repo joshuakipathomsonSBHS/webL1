@@ -1,25 +1,54 @@
 <!doctype html>
+
 <head>
-<title>Sizing</title>
-<link rel="stylesheet" href="styles.css">
-<script>
-    function calulate(){
-      var data = document.getElementById("sizeData").value;
-      alert('the number typed in is ' + data);
-        
-    }
+    <title>Sizing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calulate() {
+            var data = document.getElementById("sizeData").value;
+            if (data < 81) {
+              document.getElementById("answer").innerHTML = 'Your size is XXXS'
+            }
+            else if (data < 86) {
+              document.getElementById("answer").innerHTML = 'Your size is XXS'
+            }
+             else if (data < 91) {
+              document.getElementById("answer").innerHTML = 'Your size is XS'
+            }
+             else if (data < 96) {
+              document.getElementById("answer").innerHTML = 'Your size is S'
+            }
+             else if (data < 101) {
+              document.getElementById("answer").innerHTML = 'Your size is M'
+            }
+                 else if (data < 106) {
+              document.getElementById("answer").innerHTML = 'Your size is L'
+            }
+                 else if (data < 111) {
+              document.getElementById("answer").innerHTML = 'Your size is XL'
+            }
+             else if (data < 116) {
+              document.getElementById("answer").innerHTML = 'Your size is XXL'
+            }
+              else if (data < 121) {
+              document.getElementById("answer").innerHTML = 'Your size is XXXL'
+            }
+        }
+
     </script>
 </head>
+
 <body>
     <nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-    <a href="sizing.html">Sizing</a>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="sizing.html">Sizing</a>
     </nav>
     <h1>Waist to shoulder Size Calculator</h1>
     <input type="number" name="size" id="sizeData">
     <button type="submit" onclick="calulate()">Submit</button>
+    <p id="answer"></p>
 </body>
 <script>
 
